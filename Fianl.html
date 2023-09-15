@@ -98,8 +98,8 @@
                                     <div
                                         class="flex flex-wrap text-sm items-start gap-10 pt-2 font-semibold text-black">
                                         <div class="grid space-y-3 xxs:w-[469px] lg:w-auto ">
-                                            <label for="selectsize ">Ring size</label>
-                                            <select id="selectsize"
+                                            <label>Ring size</label>
+                                            <select
                                                 class="sm:w-full pl-4 lg:w-52 gap-20 border rounded-sm h-8 font-normal text-slate-400">
                                                 <option>Select size</option>
                                                 <option value="1">1</option>
@@ -135,8 +135,8 @@
                                     </div>
 
 
-                                    <div class="flex items-center gap-2 pt-3 text-base">
-                                        <legend class="font-semibold text-slate-700">Select Protection Plans</legend>
+                                    <fieldset class="flex items-center gap-2 pt-3 text-base font-semibold ">
+                                        <legend class="font-semibold ">Select Protection Plans</legend>
                                         <svg class="w-5 h-5 text-sky-800" xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 32 32" fill="currentColor">
                                             <defs></defs>
@@ -148,7 +148,7 @@
                                             <path d="M16,22a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,16,22Z"
                                                 transform="translate(0 0)"></path>
                                         </svg>
-                                    </div>
+                                    </fieldset>
 
                                     <!-- Select Plan -->
                                     <div class="space-y-2 ">
@@ -214,8 +214,7 @@
                                             <button type="button"
                                                 class="flex items-center text-blue-800 px-1 gap-1 peer">
                                                 <span class="text-2xl font-bold">+</span>
-                                                <button class="pt-1 text-blue-800">Add engraving <span
-                                                        class="font-bold">$30.00</span></button>
+                                                <span class="pt-1 text-blue-800">Add engraving <b>$30.00</b></span>
                                             </button>
                                         </div>
                                     </div>
@@ -393,8 +392,8 @@
                                     <div
                                         class="flex flex-wrap text-sm items-start gap-10 pt-2 font-semibold text-black">
                                         <div class="grid space-y-3 xxs:w-[466px] lg:w-auto ">
-                                            <label for="selectsize ">Ring size</label>
-                                            <select id="selectsize"
+                                            <label>Ring size</label>
+                                            <select
                                                 class="xxs:w-full pl-4 lg:w-52 gap-20 border rounded-sm h-8 font-normal text-slate-400">
                                                 <option>Select size</option>
                                                 <option value="1">1</option>
@@ -430,7 +429,7 @@
                                     </div>
 
 
-                                    <div class="flex items-center gap-2 pt-3 text-base">
+                                    <fieldset class="flex items-center gap-2 pt-3 text-base">
                                         <legend class="font-semibold text-slate-700">Select Protection Plans</legend>
                                         <svg class="w-5 h-5 text-sky-800" xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 32 32" fill="currentColor">
@@ -443,7 +442,7 @@
                                             <path d="M16,22a1.5,1.5,0,1,0,1.5,1.5A1.5,1.5,0,0,0,16,22Z"
                                                 transform="translate(0 0)"></path>
                                         </svg>
-                                    </div>
+                                    </fieldset>
 
                                     <!-- Select Plan -->
                                     <div class="space-y-2 ">
@@ -505,10 +504,10 @@
                                             </div>
                                         </div>
                                         <div class="flex items-center text-sm gap-2 text-slate-700">
-                                            <label>
-                                                <p><span class="font-semibold text-slate-700">Engraving:</span> Script
-                                                    Lettering <q class="font-semibold text-slate-700">Ucodesoft</q></p>
-                                            </label>
+
+                                            <p><span class="font-semibold text-slate-700">Engraving:</span> Script
+                                                Lettering <q class="font-semibold text-slate-700">Ucodesoft</q></p>
+
 
                                             <button type="button" class="flex items-center text-sky-600 px-1 gap-1">
                                                 <span class="p-1 bg-slate-600 rounded-full">
@@ -888,54 +887,45 @@
         </section>
 
         <!-- Modal -->
-    <div
-    class="w-full  h-full grid place-items-center bg-black/50 z-10">
-    <article
-        class="px-20 py-8 w-full h-full max-w-3xl grid place-items-center bg-white space-y-8 relative">
-        <div class=" text-center text-slate-500 space-y-4">
-            <h2 class="text-3xl font-bold text-slate-600">Engrave Your Ring</h2>
-            <p class="text-base font-semibold">You can choose between our
-                standard block font or a script font as shown here ans enteryour
-                text below. For engravings of more than fourteen characters,
-                discuss with customer service after completing your order.</p>
-        </div>
-        <div
-            class="flex xxs:block md:flex items-center justify-center gap-8 sm:space-y-4 md:space-y-0 w-full">
-            <figure class="flex-1 w-full h-full ">
-               <div class="flex items-center justify-center">
-                <div class="w-80 h-44 rounded-xl flex items-center justify-center">
-                    <img src="/Image/Ring.jpg"
-                        alt="Ring1"
-                        class="w-full h-full object-cover rounded-xl">
+        <div class="w-full h-full fixed top-0 grid place-items-center bg-black/50 z-10">
+            <article class="px-20 py-8 w-full h-full max-w-3xl grid place-items-center bg-white space-y-8 relative">
+                <div class=" text-center text-slate-500 space-y-4">
+                    <h2 class="text-3xl font-bold text-slate-600">Engrave Your Ring</h2>
+                    <p class="text-base font-semibold">You can choose between our
+                        standard block font or a script font as shown here ans enteryour
+                        text below. For engravings of more than fourteen characters,
+                        discuss with customer service after completing your order.</p>
                 </div>
-                <figcaption
-                    class="absolute xxs:top-[368px] ssm:top-[344px] sm:top-[320px] md:top-[341px] font-semibold text-sm  ">
-                    <span class="transform skew-x-6 mb-2 mr-2 text-xl text-yellow-800">Neeraj</span>
-                    
-                   </figcaption>
-                   </div>
-            </figure>
-            <form class="flex-1 space-y-5 pr-4">
-                <label class="text-base font-bold text-slate-500">Engraving
-                    Text</label>
-                <input type="text" name="text" id="text"
-                    placeholder="Enter Text" class="p-2 w-full border-2">
-                <div class="flex ">
-                    <input type="radio" name="engraving" id="block"
-                        class="peer/block" hidden>
-                    <label for="block"
-                        class="flex-1 py-2 font-semibold text-slate-600 rounded-sm text-center peer-checked/block:bg-blue-600 peer-checked/block:text-white border-2 border-r-0 border-black">Block</label>
-                    <input type="radio" name="engraving" id="script"
-                        class="peer/script" hidden>
-                    <label for="script"
-                        class="flex-1 py-2 font-semibold text-slate-600 rounded-sm text-center peer-checked/script:bg-blue-600 peer-checked/script:text-white border-2 border-black">Script</label>
+                <div class="flex xxs:block md:flex items-center justify-center gap-8 sm:space-y-4 md:space-y-0 w-full">
+                    <div class="flex-1  w-full h-full ">
+                        <figure class="flex items-center justify-center">
+                            <div class="w-80 h-44 rounded-xl flex items-center justify-center">
+                                <img src="/Image/Ring.jpg" alt="Ring1" class="w-full h-full object-cover rounded-xl">
+                            </div>
+                            <figcaption
+                                class="absolute xxs:top-[368px] ssm:top-[344px] sm:top-[320px] md:top-[390px] font-semibold text-sm  ">
+                                <span class="transform skew-x-6 mb-2 mr-2 text-xl text-yellow-800">Neeraj</span>
+
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <form class="flex-1 space-y-5 pr-4">
+                        <label class="text-base font-bold text-slate-500">Engraving
+                            Text</label>
+                        <input type="text" name="text" id="text" placeholder="Enter Text" class="p-2 w-full border-2">
+                        <div class="flex ">
+                            <input type="radio" name="engraving" id="block" class="peer/block" hidden>
+                            <label for="block"
+                                class="flex-1 py-2 font-semibold text-slate-600 rounded-sm text-center peer-checked/block:bg-blue-600 peer-checked/block:text-white border-2 border-r-0 border-black">Block</label>
+                            <input type="radio" name="engraving" id="script" class="peer/script" hidden>
+                            <label for="script"
+                                class="flex-1 py-2 font-semibold text-slate-600 rounded-sm text-center peer-checked/script:bg-blue-600 peer-checked/script:text-white border-2 border-black">Script</label>
+                        </div>
+                        <input type="submit" class="bg-blue-600 text-white w-full py-3 rounded-lg">
+                    </form>
                 </div>
-                <input type="submit"
-                    class="bg-blue-600 text-white w-full py-3 rounded-lg">
-            </form>
+            </article>
         </div>
-    </article>
-</div>
 
     </main>
 </body>
