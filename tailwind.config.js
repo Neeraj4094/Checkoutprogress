@@ -4,8 +4,11 @@ module.exports = {
   theme: {
     extend: {},
     screens: {
-      'xxs': '440px',
+      'xxs': '320px',
       // screen:440px
+
+      'ssm':'490px',
+
       'sm': '640px',
       // => @media (min-width: 640px) { ... }
 
@@ -21,7 +24,7 @@ module.exports = {
       '2xl': '1436px',
     },
     fontFamily: {
-      'josh':'josh',
+      'jost':'jost',
     },
   },
   plugins: [],
