@@ -26,7 +26,7 @@ module.exports = {
       '2xl': '1436px',
     },
     fontFamily: {
-      'jost':'jost', 
+      'jost':'Jost', 
     },
   },
   plugins: [],
