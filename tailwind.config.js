@@ -2,31 +2,18 @@
 module.exports = {
   content: ["*"],
   theme: {
-    extend: {},
-    screens: {
-      'xxs': '320px',
-      // screen:440px
-
-      'ssm':'490px',
-
-      'sm': '640px',
-      // => @media (min-width: 640px) { ... }
-
-      'md': '768px',
-      // => @media (min-width: 768px) { ... }
-
-      'lg': '1024px',
-      // => @media (min-width: 1024px) { ... }
-
-      'llg':'1180',
-
-      'xl': '1280px',
-      // => @media (min-width: 1280px) { ... }
-
-      '2xl': '1436px',
-    },
-    fontFamily: {
-      'jost':'Jost', 
+    extend: {
+      screens: {
+        'xxs': '320px',
+        // screen:440px
+  
+        'ssm':'490px',
+  
+        '2xl': '1436px',
+      },
+      fontFamily: {
+        'jost':'Jost', 
+      },
     },
   },
   plugins: [],

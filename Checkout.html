@@ -63,7 +63,7 @@
     <main class="w-full">
         <div class=" text-sm xxs:mt-20 lg:mt-28 w-full px-4">
 
-            <form class="">
+            <form class="max-w-full">
                 <ul class="space-y-10">
                     <!--Details of First Product  -->
                     <li>
@@ -104,9 +104,9 @@
                                     <span class="text-2xl font-semibold text-slate-700">$1,258.78</span>
 
                                     <!-- Ring size & Quantity and other info -->
-                                    <div
+                                    <fieldset
                                         class="flex flex-wrap text-sm items-start gap-10 py-3 font-medium text-slate-800">
-                                        <div class="grid space-y-3 xxs:w-[120px] ssm:w-[180px] md:w-[250px] lg:w-auto ">
+                                        <div class="grid space-y-3 xxs:w-[120px] ssm:w-[180px] md:w-[250px] lg:w-auto">
                                             <label>Ring size</label>
                                             <select
                                                 class="sm:w-full pl-4 lg:w-52 gap-20 border rounded-sm h-8 font-normal text-slate-400">
@@ -128,7 +128,7 @@
                                                 <button type="button" class="text-2xl text-slate-400">+</button>
                                             </div>
                                         </div>
-                                        <fieldset class="space-y-3">
+                                        <div class="space-y-3">
                                             <legend>Would you like to add a center Stone?</legend>
                                             <div class="flex gap-8 pt-1 items-center">
                                                 <div class="flex items-center gap-2">
@@ -140,12 +140,12 @@
                                                     <label for="selectno">No</label>
                                                 </div>
                                             </div>
-                                        </fieldset>
-                                    </div>
+                                        </div>
+                                    </fieldset>
 
 
                                     <fieldset class="flex items-center gap-1 text-base ">
-                                        <span class="font-medium text-slate-800 w-auto">Select Protection Plans</span>
+                                        <legend class="font-medium text-slate-800 w-auto">Select Protection Plans</legend>
                                         <svg class="w-5 h-5 text-blue-800" xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 32 32" fill="currentColor">
                                             <defs></defs>
@@ -312,7 +312,7 @@
                                                     <h2 class="font-semibold">Complementary Apprisal</h2>
                                                     <span class="font-bold text-slate-800 text-sm">$00.00</span>
                                                 </div>
-                                                <span class="text-xs text-gray-500">Item #: RB1077-WG14</span>
+                                                <p class="text-xs text-gray-500">Item #: RB1077-WG14</p>
                                             </div>
                                         </div>
 
@@ -405,9 +405,9 @@
                                     <span class="text-2xl font-semibold text-slate-700">$1,258.78</span>
 
                                     <!-- Ring size & Quantity and other info -->
-                                    <div
+                                    <fieldset
                                         class="flex flex-wrap text-sm items-start gap-10 py-3 font-medium text-slate-800">
-                                        <div class="grid space-y-3 xxs:w-[120px] ssm:w-[180px] md:w-[250px] lg:w-auto ">
+                                        <div class="grid space-y-3 xxs:w-[120px] ssm:w-[180px] md:w-[250px] lg:w-auto">
                                             <label>Ring size</label>
                                             <select
                                                 class="sm:w-full pl-4 lg:w-52 gap-20 border rounded-sm h-8 font-normal text-slate-400">
@@ -429,7 +429,7 @@
                                                 <button type="button" class="text-2xl text-slate-400">+</button>
                                             </div>
                                         </div>
-                                        <fieldset class="space-y-3">
+                                        <div class="space-y-3">
                                             <legend>Would you like to add a center Stone?</legend>
                                             <div class="flex gap-8 pt-1 items-center">
                                                 <div class="flex items-center gap-2">
@@ -441,12 +441,12 @@
                                                     <label for="no">No</label>
                                                 </div>
                                             </div>
-                                        </fieldset>
-                                    </div>
+                                        </div>
+                                    </fieldset>
 
 
                                     <fieldset class="flex items-center gap-1 text-base ">
-                                        <span class="font-medium text-slate-800 w-auto">Select Protection Plans</span>
+                                        <legend class="font-medium text-slate-800 w-auto">Select Protection Plans</legend>
                                         <svg class="w-5 h-5 text-blue-800" xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 32 32" fill="currentColor">
                                             <defs></defs>
@@ -868,10 +868,10 @@
                         </div>
                         <figcaption
                             class="text-sm text-slate-600 space-y-3 flex flex-col items-center justify-center text-center">
-                            <h3 class="font-semibold text-lg text-slate-800">Foaming Cleaner</h3>
-                            <span class="font-bold text-slate-800">$12.00</span>
+                            <h3 class="font-medium text-base w-full text-slate-800">Foaming Cleaner</h3>
+                            <span class="font-semibold text-slate-800">$12.00</span>
                             <button type="button"
-                                class="px-5 py-1 border border-blue-600 rounded-sm text-lg font-semibold text-blue-500">Add
+                                class="px-5 py-1 border border-blue-600 rounded-sm text-base font-medium text-blue-500">Add
                                 to
                                 Cart</button>
                         </figcaption>
@@ -882,10 +882,10 @@
                         </div>
                         <figcaption
                             class="text-sm text-slate-600 space-y-3 flex flex-col items-center justify-center text-center">
-                            <h3 class="font-semibold text-lg w-full text-slate-800">Foaming Cleaner</h3>
-                            <span class="font-bold text-slate-800">$12.00</span>
+                            <h3 class="font-medium text-base w-full text-slate-800">Foaming Cleaner</h3>
+                            <span class="font-semibold text-slate-800">$12.00</span>
                             <button type="button"
-                                class="px-5 py-1 border border-blue-600 rounded-sm text-lg font-semibold text-blue-600">Add
+                                class="px-5 py-1 border border-blue-600 rounded-sm text-base font-medium text-blue-600">Add
                                 to
                                 Cart</button>
                         </figcaption>
@@ -896,10 +896,10 @@
                         </div>
                         <figcaption
                             class="text-sm text-slate-600 space-y-3 flex flex-col items-center justify-center text-center">
-                            <h3 class="font-semibold text-lg w-full text-slate-800">Foaming Cleaner</h3>
-                            <span class="font-bold text-slate-800">$12.00</span>
+                            <h3 class="font-medium text-base w-full text-slate-800">Foaming Cleaner</h3>
+                            <span class="font-semibold text-slate-800">$12.00</span>
                             <button type="button"
-                                class="px-5 py-1 border border-blue-600 rounded-sm text-lg font-semibold text-blue-600">Add
+                                class="px-5 py-1 border border-blue-600 rounded-sm text-base font-medium text-blue-600">Add
                                 to
                                 Cart</button>
                         </figcaption>
@@ -910,10 +910,10 @@
                         </div>
                         <figcaption
                             class="text-sm text-slate-600 space-y-3 flex flex-col items-center justify-center text-center">
-                            <h3 class="font-semibold text-lg w-full text-slate-800">Foaming Cleaner</h3>
-                            <span class="font-bold text-slate-800">$12.00</span>
+                            <h3 class="font-medium text-base w-full text-slate-800">Foaming Cleaner</h3>
+                            <span class="font-semibold text-slate-800">$12.00</span>
                             <button type="button"
-                                class="px-5 py-1 border border-blue-600 rounded-sm text-lg font-semibold text-blue-600">Add
+                                class="px-5 py-1 border border-blue-600 rounded-sm text-base font-medium text-blue-600">Add
                                 to
                                 Cart</button>
                         </figcaption>
@@ -924,10 +924,10 @@
                         </div>
                         <figcaption
                             class="text-sm text-slate-600 space-y-2 flex flex-col items-center justify-center text-center">
-                            <h3 class="font-semibold text-lg w-full text-slate-800">Foaming Cleaner</h3>
-                            <span class="font-bold text-slate-800">$12.00</span>
+                            <h3 class="font-medium text-base w-full text-slate-800">Foaming Cleaner</h3>
+                            <span class="font-semibold text-slate-800">$12.00</span>
                             <button type="button"
-                                class="px-5 py-1 border border-blue-600 rounded-sm text-lg font-semibold text-blue-500">Add
+                                class="px-5 py-1 border border-blue-600 rounded-sm text-base font-medium text-blue-600">Add
                                 to
                                 Cart</button>
                         </figcaption>
@@ -938,10 +938,10 @@
                         </div>
                         <figcaption
                             class="text-sm text-slate-600 space-y-2 flex flex-col items-center justify-center text-center">
-                            <h3 class="font-semibold text-lg w-full text-slate-800">Foaming Cleaner</h3>
-                            <span class="font-bold text-slate-800">$12.00</span>
+                            <h3 class="font-medium text-base w-full text-slate-800">Foaming Cleaner</h3>
+                            <span class="font-semibold text-slate-800">$12.00</span>
                             <button type="button"
-                                class="px-5 py-1 border border-blue-600 rounded-sm text-lg font-semibold text-blue-600">Add
+                                class="px-5 py-1 border border-blue-600 rounded-sm text-base font-medium text-blue-600 w-full">Add
                                 to
                                 Cart</button>
                         </figcaption>
